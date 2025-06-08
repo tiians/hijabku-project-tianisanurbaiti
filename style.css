@@ -1,0 +1,216 @@
+*
+html {
+    margin: 0PX ;
+    padding: 0;
+}
+
+body{
+    background-color: blanchedalmond;
+    font-family: arial,sans-serif;
+    margin: 0;
+
+
+.navbar {
+  background-color: #d7b75890; /* warna latar navbar */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* jarak antar menu */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d35400; /* warna saat hover */
+}
+
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  background-color: #d7b75890;
+  border: 2px solid #bead79ef;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #e67e22;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.product-card .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-card .add,
+.product-card .buy {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-card .add {
+  background-color: #f39c12;
+  color: white;
+}
+
+.product-card .buy {
+  background-color: #27ae60;
+  color: white;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.star {
+  color: gold; /* Or your desired star color */
+  font-size: 16px; /* Adjust size as needed */
+}
+
+.rating-value {
+  margin-left: 5px;
+  font-size: 14px;
+  color: gray;
+}
+
+.keranjang-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.beli-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Default (Laptop / Desktop ≥ 1200px) */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.produk {
+  width: 23%;
+  display: inline-block;
+  margin: 1%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .produk {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+/* Ponsel (320px) */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .produk {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+.keranjang-btn i, .beli-btn i {
+  margin-right: 5px;
+}
+
+.nav-links i {
+  margin-right: 4px;
+}
+}
